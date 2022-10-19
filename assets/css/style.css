@@ -10,11 +10,6 @@ body {
 main {
   display: block;
 }
-h1 {
-  margin: 0.67em 0;
-
-  font-size: 2em;
-}
 hr {
   overflow: visible;
 
@@ -190,7 +185,7 @@ html {
 }
 
 h1 {
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
 
   font-family: "Roboto Slab", serif;
   font-size: 3.75rem;
@@ -253,7 +248,7 @@ a {
   z-index: 1;
 }
 .header-content__title {
-  margin: 0 0 65px;
+  margin: 0 0 53px;
 
   text-align: center;
 }
@@ -269,20 +264,20 @@ a {
 }
 
 .header-logo {
-  letter-spacing: 0.25em;
+  letter-spacing: 0.22em;
 
   font-size: 1.5rem;
 }
 .header-logo__link {
   display: block;
 
-  padding: 20px;
+  padding: 20px 20px 20px 0;
 }
 .header-logo__accent {
   display: inline-block;
 
-  margin-right: 7px;
-  padding: 20px 10px;
+  margin-right: 4px;
+  padding: 14px 1px 13px 5px;
 
   border: 3px solid #d53d27;
 }
@@ -319,7 +314,7 @@ a {
   justify-content: end;
 
   width: 100%;
-  margin: 0;
+  margin: 0 -10px 0 0;
   padding: 0;
 
   list-style: none;
@@ -332,6 +327,10 @@ a {
   display: block;
 
   padding: 20px 10px;
+
+  letter-spacing: 0.1em;
+
+  font-size: 1.125rem;
 }
 
 .header-overlay {
