@@ -3,9 +3,9 @@
 
 .btn {
   width: 250px;
-  height: 60px;
-  background-color: rgba($color-light, 0.1);
-  border: 2px solid #fff;
+  border-width: 2px;
+  border-style: solid;
+  background-color: $color-primary;
   padding: 0.5em 1em;
   display: flex;
   align-items: center;
@@ -13,4 +13,27 @@
 
   font-size: 1.125rem;
   letter-spacing: 0.1em;
+  transition: background-color 0.5s linear;
+
+  &:hover,
+  &:focus {
+    background-color: $color-accent;
+  }
+
+  &--light {
+    background-color: rgba($color-light, 0.1);
+    border-color: $color-light;
+    width: 250px;
+    height: 60px;
+  }
+  &--primary {
+    background-color: rgba($color-primary, 0.8);
+    border-color: 2px solid $color-primary;
+    width: 350px;
+    height: 60px;
+  }
+}
+
+.visually-hidden {
+  @include visually-hidden;
 }
