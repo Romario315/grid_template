@@ -610,7 +610,7 @@ p {
 
   background-color: rgba(99, 117, 136, 0.1);
 }
-.about__content p:first-of-type:last-of-type {
+.about__content p:last-of-type {
   margin: 0;
 }
 .about__image {
@@ -891,7 +891,7 @@ p {
   left: calc(50% - 37.5px);
 
   width: 75px;
-  height: 1.5px;
+  height: 2px;
 
   content: "";
 

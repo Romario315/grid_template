@@ -59,10 +59,9 @@
             display: none;
           }
         }
-
-        &:last-of-type {
-          margin: 0;
-        }
+      }
+      &:last-of-type {
+        margin: 0;
       }
       @include lg-min {
         font-size: 1.125rem;
