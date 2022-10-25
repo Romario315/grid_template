@@ -254,6 +254,7 @@ p {
 }
 .btn--light {
   border-color: #ffffff;
+  outline: none;
   background-color: rgba(255, 255, 255, 0.1);
 }
 .btn--primary {
@@ -291,7 +292,7 @@ p {
 
   color: #ffffff;
   background-color: #2d3651;
-  background-image: url(../../../../assets/img/img-header.png);
+  background-image: url(../img/img-header.png);
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -501,9 +502,9 @@ p {
   height: 100%;
   padding: 20px;
 
-  -webkit-transition: color 0.2s linear;
-       -o-transition: color 0.2s linear;
-          transition: color 0.2s linear;
+  -webkit-transition: color 0.5s linear;
+       -o-transition: color 0.5s linear;
+          transition: color 0.5s linear;
 }
 .skill-item__image {
   position: absolute;
@@ -512,11 +513,11 @@ p {
   bottom: 0;
   left: 0;
 
-  -webkit-transition: -webkit-transform 0.2s linear;
-       -o-transition:         transform 0.2s linear;
-          transition: -webkit-transform 0.2s linear;
-          transition:         transform 0.2s linear;
-          transition:         transform 0.2s linear, -webkit-transform 0.2s linear;
+  -webkit-transition: -webkit-transform 0.5s linear;
+       -o-transition:         transform 0.5s linear;
+          transition: -webkit-transform 0.5s linear;
+          transition:         transform 0.5s linear;
+          transition:         transform 0.5s linear, -webkit-transform 0.5s linear;
 
   background-position: center;
   background-size: cover;
@@ -528,9 +529,9 @@ p {
   bottom: 0;
   left: 0;
 
-  -webkit-transition: opacity 0.2s linear;
-       -o-transition: opacity 0.2s linear;
-          transition: opacity 0.2s linear;
+  -webkit-transition: opacity 0.5s linear;
+       -o-transition: opacity 0.5s linear;
+          transition: opacity 0.5s linear;
 
   opacity: 80%;
   background-color: #2d3651;
@@ -827,6 +828,7 @@ p {
 .form-item__input:focus {
   border-color: rgba(255, 255, 255, 0.15);
   border-bottom-color: #ffffff;
+  outline: none;
   background-color: rgba(255, 255, 255, 0.15);
 }
 .form-item__input:hover::-webkit-input-placeholder,
@@ -1071,7 +1073,7 @@ p {
 
     list-style: none;
 
-    background-color: rgba(68, 89, 110, 0.9);
+    background-color: rgba(68, 89, 110, 0.8);
     -webkit-box-shadow: -3px 3px 20px -10px black;
             box-shadow: -3px 3px 20px -10px black;
   }

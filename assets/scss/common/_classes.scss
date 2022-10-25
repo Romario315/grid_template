@@ -22,6 +22,7 @@
   &--light {
     background-color: rgba($color-light, 0.1);
     border-color: $color-light;
+    outline: none;
 
     @include lg-min {
       font-size: 1.125rem;

@@ -28,20 +28,20 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    transition: color 0.2s linear;
+    transition: color 0.5s linear;  
   }
 
   &__image {
     @include abs-position;
     background-size: cover;
     background-position: center;
-    transition: transform 0.2s linear;
+    transition: transform 0.5s linear;
   }
   &__overlay {
     background-color: $color-primary;
     @include abs-position;
     opacity: 80%;
-    transition: opacity 0.2s linear;
+    transition: opacity 0.5s linear;
   }
 
   &:hover {
