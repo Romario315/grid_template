@@ -1,0 +1,85 @@
+@use "../../../mixins" as *;
+@use "../../../presets" as *;
+
+.about {
+  letter-spacing: 0.055em;
+  background-color: $color-gray-light;
+  padding-top: $gap-x5;
+  padding-bottom: $gap-x5;
+
+  &__container {
+    display: grid;
+
+    @extend %container;
+
+    @include lg-min {
+      gap: $gap-x5;
+      grid-template-columns: 1fr 271px;
+    }
+    @include lg-md {
+      gap: $gap-x2;
+      grid-template-columns: 1fr 271px;
+    }
+    @include md-sm {
+      gap: $gap-x2;
+      grid-template-columns: 1fr 236px;
+    }
+    @include sm {
+      gap: $gap;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__content {
+    p {
+      &:first-of-type {
+        position: relative;
+        margin-top: -5px;
+        &::after {
+          position: absolute;
+          top: 0;
+
+          width: 2px;
+          height: 200px;
+
+          content: "";
+
+          background-color: rgba(99, 117, 136, 0.1);
+
+          @include lg-min {
+            right: -50px;
+          }
+          @include lg-md {
+            right: -20px;
+          }
+          @include md-sm {
+            right: -10px;
+          }
+          @include sm {
+            display: none;
+          }
+        }
+
+        &:last-of-type {
+          margin: 0;
+        }
+      }
+      @include lg-min {
+        font-size: 1.125rem;
+      }
+    }
+  }
+  &__image {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    & img {
+      max-width: 100%;
+      max-height: 480px;
+    }
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+}

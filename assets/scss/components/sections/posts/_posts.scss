@@ -1,0 +1,58 @@
+@use "../../../mixins" as *;
+@use "../../../presets" as *;
+
+.posts {
+  &__container {
+    @extend %container;
+  }
+  &__grid {
+    display: grid;
+    grid-template-areas: "p1 p1 p2 p3" "p4 p5 p6 p6";
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: $gap;
+    gap: $gap;
+
+    @include lg-min {
+      grid-template-areas: "p1 p1 p2 p3" "p4 p5 p6 p6";
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @include lg-md {
+      grid-template-areas: "p1 p1 p2" "p3 p4 p4" "p5 p5 p6";
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include md-sm {
+      grid-template-areas: "p1 p2" "p3 p4" "p5 p6";
+      grid-template-columns: 1fr 1fr;
+    }
+    @include sm {
+      grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6";
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  @include lg-min {
+    padding-top: $gap-x5;
+    padding-bottom: $gap-x5;
+  }
+  @include lg-md {
+    padding-top: $gap-x4;
+    padding-bottom: $gap-x4;
+  }
+  @include md-sm {
+    padding-top: $gap-x3;
+    padding-bottom: $gap-x3;
+  }
+  @include sm {
+    padding-top: $gap-x3;
+    padding-bottom: $gap-x3;
+  }
+}
