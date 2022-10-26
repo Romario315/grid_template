@@ -1093,6 +1093,10 @@ img {
   .header-navbar__link {
     padding: 10px 20px;
   }
+  .about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 @media (max-width: 767.8px) and (min-width: 576px) {
   h2 {
@@ -1111,10 +1115,6 @@ img {
   }
   .about__content p:first-of-type::after {
     right: -10px;
-  }
-  .about {
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
   .posts__grid {
     grid-template-areas: "p1 p2" "p3 p4" "p5 p6";
