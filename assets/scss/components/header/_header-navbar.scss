@@ -101,7 +101,7 @@
     transition: color 0.25s linear;
 
     &:hover,
-    &focus {
+    &:focus {
       color: $color-accent;
     }
   }

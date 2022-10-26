@@ -17,11 +17,6 @@
     justify-content: center;
     background-color: $color-primary;
     transition: transform 0.5s linear;
-
-    img {
-      width: 100%;
-      object-fit: cover;
-    }
   }
 
   &__caption {

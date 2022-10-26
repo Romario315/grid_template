@@ -56,6 +56,38 @@
     border: 2px solid $color-primary;
   }
 }
+img {
+  border-style: none;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 480px;
+}
+
+.img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.fab {
+  font-size: 36px;
+}
+
+.span-first {
+  margin-right: -0.5em;
+  letter-spacing: 0.33em;
+
+  font-weight: 100;
+}
+
+.span-second {
+  letter-spacing: 0.05em;
+
+  color: #e5e5e5;
+
+  font-weight: 700;
+}
 
 .visually-hidden {
   @include visually-hidden;
